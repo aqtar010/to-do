@@ -50,6 +50,7 @@ const Body = () => {
           placeholder="Input Text"
           onChange={onChangeHandler}
           value={newItem}
+          autoFocus
         />
         <button onClick={addItem}>Add</button>
       </form>
