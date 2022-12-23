@@ -21,7 +21,8 @@ const Body = () => {
   const onChangeHandler = (event) => {
     setNewItem(event.currentTarget.value);
   };
-  const addItem = () => {
+  const addItem = (event) => {
+    event.preventDefault();
     if (newItem) {
       const item = {
         id: Math.floor(Math.random() * 10000),
